@@ -1,0 +1,14 @@
+$def with (article)
+<!DOCTYPE html>
+<html lang='zh'>
+    $:render.layout.header(article['title'])
+<body>
+    $:render.layout.navbar()
+    <div class="blog">
+        <div class="blog-post">
+            $:article['content']
+        </div>
+    </div>
+    $:render.layout.footer()
+</body>
+</html>

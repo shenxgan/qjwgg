@@ -1,0 +1,17 @@
+$def with (article)
+
+<div class="blog-post">
+    <div class="blog-comment">
+        <p class="p1">评论列表</p>
+        <hr></hr>
+        $for comment_info in article['comment_list']:
+        <div>
+            <p class="p2">$comment_info[2]（来自$comment_info[4]的网友）</p>
+            <p class="p3">$:comment_info[5]</p>
+            <p class="p2">$comment_info[1]</p>
+            <hr></hr>
+        </div>
+    </div>
+</div>
+
+$:render.post_comment(article)

@@ -1,0 +1,77 @@
+$def with (params)
+<!DOCTYPE html>
+<html lang='zh'>
+    $:render.layout.header('请叫我古怪')
+<body>
+    $:render.layout.navbar()
+    <div class="home">
+        <div class="home-head">
+            <!-- <img src="/static/img/logo_bqsj.png" /> -->
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div class="home-main">
+            <div class="home-main-left left">
+                $:params
+            </div>
+            <div class="home-main-right left">
+                <div class="home-aboutme">
+                    <div class="home-aboutme-name">
+                        关于我：
+                    </div>
+                    <div>
+                        <p>
+                            &nbsp;主页： www.qjwgg.com <br>
+                            &nbsp;邮箱： qjwgg-guguai@163.com
+                        </p>
+                    </div>
+                    <div class="home-aboutme-email">
+                        <div class="left">
+                            <a href="mailto:qjwgg_guguai@163.com?subject=Hello%20guguai"><img src="/static/img/email_to_me.png" /></a>
+                        </div>
+                        <div class>
+                            <a href="mailto:qjwgg_guguai@163.com?subject=Hello%20guguai"><button>Email to me</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-tagcloud">
+                    <div class="home-tagcloud-name">
+                        标签云：
+                    </div>
+                    <div id="div1">
+                        <a href="/webpy">webpy</a>
+                        <a href="/publish">Markdown</a>
+                        <a href="/python">Python</a>
+                        <a href="/linux">Linux</a>
+                        <a href="/linux/linux_svn.html">svn</a>
+                        <a href="/linux/linux_ntp.html">ntp</a>
+                        <a href="/linux/mysql_basic_op.html">Mysql</a>
+                        <a href="/webpy/webpy_ip_locate.html">ip定位</a>
+                        <a href="/webpy/webpy_highlight.html">代码高亮</a>
+                        <a href="/python/python_qrcode.html">qrcode</a>
+                        <a href="/qrcode">二维码</a>
+                        <a href="/linux/nmap_tool.html">Nmap</a>
+                        <a href="/webpy/webpy_highlight.html">highlight.js</a>
+                        <a href="/webpy/webpy_comment.html">留言板</a>
+                        <a href="/webpy/webpy_search.html">搜索</a>
+                        <a href="/webpy/webpy_form_submit.html">表单</a>
+                    </div>
+                </div>
+
+                <div class="home-qrcode">
+                    <div class="home-qrcode-name">
+                        二维码访问此站：
+                    </div>
+                    <img class="home-qrcode-qr_logo" src="/static/img/qr_logo.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    $:render.layout.footer()
+</body>
+</html>
+<script type="text/javascript" src="/static/js/miaov.js"></script>
+

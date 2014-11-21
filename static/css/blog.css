@@ -1,0 +1,541 @@
+/*
+ * Globals
+ */
+html {
+    font-family: Arial;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    background-color: #ddd;
+}
+
+body {
+    margin: 0;
+}
+
+img{
+    max-width: 770px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 10mm;
+    font-weight: bold;
+    color: #222;
+}
+
+ul, li {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+
+hr {
+    border-color: #ddd;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 1px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 10px solid #ccc;
+    background: none repeat scroll 0px 0px rgba(102, 128, 153, 0.05);
+}
+
+pre {
+    font-size: 13px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+}
+
+pre code {
+    font-size: 13px;
+}
+
+code {
+    /* font-family: Verdana; */
+    font-family: Courier;
+    padding: 2px 4px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    width: 100%;
+}
+
+a:link { text-decoration: none;color: blue}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: red}
+/* a:visited { text-decoration: none;color: green} */
+
+.left {
+    float: left;
+}
+
+
+/**** article_webpy.html ******************/
+
+.webpy {
+    margin: 0 auto;     /*居中*/
+    background-color: #eee;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    width: 1220px;
+}
+
+.webpy-catalog {
+    margin: 0 auto;     /*居中*/
+    background-color: #eee;
+    float: left;
+    width: 240px;
+    border-right:10px solid #ddd;
+}
+
+.webpy-catalog-post {
+    padding: 50px 5px 50px 0px;
+    font-size: 15px;
+}
+
+.webpy-catalog-post a {
+    text-decoration: none;
+}
+
+.webpy-blog {
+    margin: 0 auto;     /*居中*/
+    background-color: #eee;
+    float: left;
+    width: 970px;
+    font-size : 17px;
+}
+
+
+/**** article.html *******************/
+
+.blog {
+    margin: 0 auto;
+    background-color: #eee;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    width: 970px;
+    font-size: 17px;
+}
+
+.blog-post {
+    padding: 50px 100px 50px 100px;
+}
+
+
+/**** navbar.html *******************/
+
+.blog-masthead {
+    background-color: #333;
+    margin: 0 auto;
+    text-align: center;
+    height: 48px;
+}
+
+.blog-nav .active {
+    color: #fff;
+}
+.blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 1500px;
+    color: #cdddeb;
+    font-size: 20px;
+}
+
+.blog-nav-item:link {
+    color: #ddd;
+    text-decoration: none;    /*去除下划线*/
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/**** comment.html *********************/
+
+.blog-comment {
+    font-size: 14px;
+}
+
+.blog-comment .p1{
+    font-size: 22px;
+}
+
+.blog-comment .p2{
+    font-size: 12px;
+    color: #888;
+}
+.blog-comment .p3{
+    font-size: 14px;
+}
+
+.blog-comment .span1{
+    float:left;
+    width:10%;
+}
+
+.blog-comment .span2{
+    float:left;
+    width:90%;
+}
+
+.blog-comment .span3{
+    float:left;
+    width:80%;
+}
+
+.blog-comment .span4{
+    float:left;
+    width:20%;
+}
+
+.blog-comment .input1 {
+    border-color: #999;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    background-color: #eee;
+}
+
+.blog-comment .input2 {
+    font-size: 14px;
+}
+
+.blog-comment h1 {
+    font-size: 15px;
+}
+.blog-comment h2 {
+    font-size: 14px;
+}
+.blog-comment h3 {
+    font-size: 13px;
+}
+.blog-comment h4, h5, h6{
+    font-size: 12px;
+}
+
+
+/**** footer.html ******************/
+
+.blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    float: left;
+    width: 100%;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+
+/**** search.html **********************/
+
+.search-post {
+    font-size:12px;
+}
+
+.search-post a:link {
+    text-decoration: none;
+}
+
+.search-post h1 {
+    font-size:22px;
+}
+
+.blog-post-key button{
+    height:29px;
+    width:100px;
+    padding:0 10px;
+    margin: 0 10px;
+    border:1px solid #ccc;
+    overflow:visible;
+    font-size:16px;
+    background:url('../img/search.png') no-repeat left;
+}
+
+.blog-post-key input{
+    width:572px;
+    padding:5px;
+    border:1px solid #D9D9D9;
+    border-top-color:#c0c0c0;
+    line-height:17px;
+    font-size:16px;
+}
+
+.blog-post-key:hover button{
+    border-color:#bbb;
+    color:#333;
+    background-color:#ddd;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/***** publish **************/
+
+.publish {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.publish-left {
+    width: 95%;
+    min-height: 1500px;
+    border-color: #999;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    background-color: #eee;
+    margin: 5%
+}
+
+.publish-right {
+    width: 90%;
+    height: 100%;
+    margin: 5%;
+}
+
+
+/***** qrcode.html **************/
+
+.qrcode {
+    text-align: center ;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+}
+
+.qrcode-up {
+    width: 100%;
+    height:10%;
+    color:white;
+    text-align: center ;
+    background:black;
+    font-size:17px;
+    margin: 20px 0 0 0;
+    padding:5px 0px;
+}
+
+.qrcode-down {
+    width: 100%;
+    height:90%;
+}
+
+.qrcode-down-left textarea {
+    width: 250px;
+    padding:10px;
+    margin: 10px;
+    margin-top: 50px;
+    min-height: 100px;
+    border-color: #999;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    background-color: #eee;
+}
+
+.qrcode-down-left button{
+    height:29px;
+    width:272px;
+    padding:0 10px;
+    margin: 0 10px;
+    border:1px solid #ccc;
+    overflow:visible;
+    font-size:14px;
+}
+
+.qrcode-down-left:hover button{
+    border-color:#bbb;
+    color:white;
+    background-color:black;
+}
+
+.qrcode img{
+
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.qrcode-upload-file{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    position:relative;
+    overflow:hidden;
+}
+
+.qrcode-upload-file button{
+    height:29px;
+    padding:0 10px;
+    margin: 0 10px;
+    border:1px solid #ccc;
+    overflow:visible;
+    font-size:13px;
+    background:#ddd;
+}
+
+.qrcode-upload-file input{
+
+    position:absolute;
+    top:0;
+    right:-1px;
+    font-size:50px;
+    cursor:pointer;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+
+/*****index.html**************/
+
+.home {
+    width:70%;
+    margin: 0 auto;
+}
+
+.home-head {
+    height:10%;
+    border-bottom:10px solid #ddd ;
+}
+
+.home-head img{
+    height:32px;
+}
+
+.home-main {
+    height:90%;
+}
+
+.home-main-left {
+    width:65%;
+    border-right:20px solid #ddd;
+    padding: 20px;
+    background-color: #eee;
+    border-bottom:50px solid #ddd;
+}
+
+.home-main-right {
+    width:25%;
+}
+
+.home-aboutme {
+    background-color: #eee;
+}
+
+.home-aboutme-email {
+    cursor:pointer;
+}
+
+.home-aboutme-name {
+    color:white;
+    text-align: center ;
+    background:black;
+    font-size:17px;
+    padding:5px 0px;
+}
+
+.home-aboutme button{
+    height:35px;
+    padding:0 10px;
+    border:0px solid #ccc;
+    overflow:auto;
+    font-size:15px;
+    color:white;
+    background:#159;
+    cursor:pointer;
+}
+
+.home-aboutme img{
+    width:35px;
+    height:35px;
+}
+
+#div1 {
+    position:relative;
+    width:100%;
+    height:278px;
+}
+#div1 a {
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    padding: 3px 6px;
+}
+#div1 a:hover {
+    border: 1px solid black;
+    background: black;
+    color:white;
+}
+
+.home-tagcloud{
+    text-align: center ;
+    background-color: #eee;
+}
+
+.home-tagcloud-name {
+    color:white;
+    background:black;
+    font-size:17px;
+    margin: 20px 0 0 0;
+    padding:5px 0px;
+    text-align: center ;
+}
+
+.home-qrcode {
+    text-align: center ;
+    background-color: #eee;
+}
+
+.home-qrcode-name {
+    color:white;
+    text-align: center ;
+    background:black;
+    font-size:17px;
+    margin: 20px 0 0 0;
+    padding:5px 0px;
+}
+
+.home-qrcode-qr_logo {
+    width:100%;
+    height:100%;
+    max-width:175px;
+    max-height:175px;
+}

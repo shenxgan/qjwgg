@@ -1,0 +1,56 @@
+$def with (article)
+
+<div class="blog-post">
+    <div class="blog-comment">
+        <p class="p1">发表评论</p>
+        <hr></hr>
+        <form action="comment.html" id="usrform">
+            <span class="span1">你的昵称: </span>
+            <span class="span2">
+                <input id="id_usrname" title="起一个炫酷的昵称吧~" class="input1" type="text" name="usrname"/>
+            </span><br><br>
+            <span class="span1">评论内容: </span>
+            <span class="span2">
+                <span class="span3">
+                    <textarea id="id_comment" title="评论内容支持 Markdown 语法哦~" class="input1" style="width: 500px; height: 100px; " name="comment" ></textarea>
+                </span>
+                <span class="span4">
+                    <p>评论支持以下语法：</p>
+                    <p><a href="/publish" title="点击查看 Markdown 语法">Markdown</a></p>
+                </span>
+            </span><br>
+            <input type="hidden" name="url" value="$:article['url']">
+            <input id="id_submit" class="input2" title="点击发送评论" type="submit" value="发送">
+        </form><br>
+        <p>插入图片代码示例：</p>
+        <p>![](http://www.qjwgg.com/static/img/qr_test.png)</p>
+    </div>
+</div>
+
+<script>
+
+    $$(document).ready(initPage);
+
+    function initPage()
+    {
+        $$(document).tooltip({
+            track: true
+        });
+        $$("#id_submit").click(checkValueEmpty);
+    }
+
+    function checkValueEmpty()
+    {
+        var usrname = $$("#id_usrname").val();
+        var comment = $$("#id_comment").val();
+        if (usrname == "") {
+            $$("#id_usrname").focus();
+            return false;
+        }
+        else if (comment == "") {
+            $$("#id_comment").focus();
+            return false;
+        }
+    }
+
+</script>

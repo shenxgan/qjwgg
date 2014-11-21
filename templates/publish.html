@@ -1,0 +1,23 @@
+$def with (md)
+<!DOCTYPE html>
+<html lang='zh'>
+    $:render.layout.header('Markdown 在线解析')
+<body>
+    $:render.layout.navbar()
+    <div class="publish">
+        <textarea class="publish-left" id="left" oninput="myFunction()">$md</textarea>
+    </div>
+    <div class="publish">
+        <div id="right" class="publish-right"><strong>不支持 IE 低版本。</strong></div>
+    </div>
+</body>
+</html>
+
+<script src="/static/js/markdown.js"></script>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("left").value;
+    document.getElementById("right").innerHTML = markdown.toHTML(x);
+}
+</script>

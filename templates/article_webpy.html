@@ -1,0 +1,25 @@
+$def with (article)
+<!DOCTYPE html>
+<html lang='zh'>
+    $:render.layout.header(article['title'])
+<body>
+    $:render.layout.navbar()
+    <div class="webpy">
+        <div class="webpy-catalog">
+            <div class="webpy-catalog-post">
+                $:article['catalog']
+            </div>
+        </div>
+
+        <div class="webpy-blog">
+            <div class="blog-post">
+                $:article['content']
+                <br>
+                <a href="$:article['md_name']">本文MD文件下载</a>
+            </div>
+            $:render.comment(article)
+        </div>
+    </div>
+    $:render.layout.footer()
+</body>
+</html>

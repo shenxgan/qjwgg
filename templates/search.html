@@ -1,0 +1,25 @@
+$def with (article)
+<!DOCTYPE html>
+<html lang='zh'>
+    $:render.layout.header(article['title'])
+<body>
+    $:render.layout.navbar()
+    <div class="blog">
+        <div class="blog-post">
+            <form action="search" id="usrform">
+                <div class="blog-post-key">
+                    <input type="text" name="key" />
+                    <button type="submit">搜索</button>
+                </div>
+            </form><br>
+        </div>
+        <div class="blog-post">
+            <div class="search-post">
+                $:article['content']
+            </div>
+        </div>
+    </div>
+    $:render.layout.footer()
+</body>
+</html>
+
