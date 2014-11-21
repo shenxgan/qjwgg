@@ -6,8 +6,8 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 在 webpy + Markdown 的基础上也做了一些有趣的东西：
 
-1. 在线生成二维码 [**demo**](/qrcode)
-2. Markdown 在线解析 [**demo**](/publish)
+1. 在线生成二维码 [**demo**](http://www.qjwgg.com/qrcode)
+2. Markdown 在线解析 [**demo**](http://www.qjwgg.com/publish)
 
 
 ##运行
@@ -60,7 +60,7 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 截图如下：
 
-![](/static/img/qjwgg_tree.png "qjwgg 代码结构图")
+![](http://www.qjwgg.com/static/img/qjwgg_tree.png "qjwgg 代码结构图")
 
 
 ##流程
@@ -85,4 +85,4 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 ##教程
 
-可参考本站教程：[《webpy+Markdown 教程》](/webpy)
+可参考本站教程：[《webpy+Markdown 教程》](http://www.qjwgg.com/webpy)
