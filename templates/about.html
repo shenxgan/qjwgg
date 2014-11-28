@@ -7,8 +7,6 @@ $def with (article)
     <div class="blog">
         <div class="blog-post">
             $:article['content']
-            <br>
-            <a href="$:article['md_name']">本文MD文件下载</a>
         </div>
         $:render.comment(article)
     </div>
