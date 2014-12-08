@@ -12,13 +12,13 @@
 * [mysql定期删除表中数据][10]
 
 
-[1]:    /linux/linux_ip.html
-[2]:    /linux/linux_ntp.html
-[3]:    /linux/linux_samba.html
-[4]:    /linux/linux_svn.html
-[5]:    /linux/mysql_basic_op.html
-[6]:    /linux/mysql_advanced_op.html
-[7]:    /linux/nmap_tool.html
-[8]:    /linux/linux_rsyslog.html
-[9]:    /linux/linux_logrotate.html
-[10]:   /linux/mysql_regularly_delete.html
+[1]:    http://www.qjwgg.com/linux/linux_ip.html
+[2]:    http://www.qjwgg.com/linux/linux_ntp.html
+[3]:    http://www.qjwgg.com/linux/linux_samba.html
+[4]:    http://www.qjwgg.com/linux/linux_svn.html
+[5]:    http://www.qjwgg.com/linux/mysql_basic_op.html
+[6]:    http://www.qjwgg.com/linux/mysql_advanced_op.html
+[7]:    http://www.qjwgg.com/linux/nmap_tool.html
+[8]:    http://www.qjwgg.com/linux/linux_rsyslog.html
+[9]:    http://www.qjwgg.com/linux/linux_logrotate.html
+[10]:   http://www.qjwgg.com/linux/mysql_regularly_delete.html

@@ -1,6 +1,6 @@
 #mysql数据库表的进阶操作
 
-注意，本文是围绕着数据库表结构的操作，若你想找的是**mysql数据库的基本操作**，请点击[这里](/linux/mysql_basic_op.html)。
+注意，本文是围绕着数据库表结构的操作，若你想找的是**mysql数据库的基本操作**，请点击[这里](http://www.qjwgg.com/linux/mysql_basic_op.html)。
 
 ##1. 删除字段（一列）
 

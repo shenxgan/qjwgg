@@ -14,7 +14,7 @@
 
 ##1. 在 python 中使用 MySQL，需要安装 MySQLdb 库
 
-可参照我的另一篇文章： [《python中安装MySQLdb》](/python/python_mysqldb.html)
+可参照我的另一篇文章： [《python中安装MySQLdb》](http://www.qjwgg.com/python/python_mysqldb.html)
 
 ##2. 界面上的评论框
 
@@ -50,7 +50,7 @@
     usraddr，记录用户的地址（通过获取用户的ip地址，进而获取用户物理地址，方法请接着往下看）
     comment，用户评论的内容
 
-ip 地址获取物理地址： [《ip定位》](/webpy/webpy_ip_locate.html)
+ip 地址获取物理地址： [《ip定位》](http://www.qjwgg.com/webpy/webpy_ip_locate.html)
 
 ##6. 读取数据库获取评论
 

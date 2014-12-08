@@ -35,4 +35,4 @@ comment.html模板的源码如下：
     
     
 ##相关文章：
-* [webpy实现留言板功能](/webpy/webpy_comment.html)
+* [webpy实现留言板功能](http://www.qjwgg.com/webpy/webpy_comment.html)

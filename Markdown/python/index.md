@@ -8,8 +8,8 @@
 
 
 
-[1]:    /python/python_del_pyc.html
-[2]:    /python/python_mysqldb.html
-[3]:    /python/python_smtp.html
-[4]:    /python/python_logging.html
-[5]:    /python/python_qrcode.html
+[1]:    http://www.qjwgg.com/python/python_del_pyc.html
+[2]:    http://www.qjwgg.com/python/python_mysqldb.html
+[3]:    http://www.qjwgg.com/python/python_smtp.html
+[4]:    http://www.qjwgg.com/python/python_logging.html
+[5]:    http://www.qjwgg.com/python/python_qrcode.html

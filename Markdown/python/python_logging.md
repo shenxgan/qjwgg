@@ -51,7 +51,7 @@
 
 我在上述代码示例中使用的是**RotatingFileHandler**类，它可指定文件大小与保存的份数。在上述代码示例中为保存5份，每份10M大小。
 
-> 这个功能很像Linux系统中的logrotate服务，logrotate服务介绍请参考[《logrotate服务》](/linux/linux_logrotate.html)
+> 这个功能很像Linux系统中的logrotate服务，logrotate服务介绍请参考[《logrotate服务》](http://www.qjwgg.com/linux/linux_logrotate.html)
 
 当然，除了上面以大小进行轮转的**RotatingFileHandler**类外，还有以时间进行轮转的**TimedRotatingFileHandler**类。
 

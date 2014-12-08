@@ -1,6 +1,6 @@
 #rsyslog配置讲解
 
-**rsyslog负责写入日志，[logrotate](/linux/linux_logrotate.html)负责备份和删除旧日志，以及更新日志文件。**
+**rsyslog负责写入日志，[logrotate](http://www.qjwgg.com/linux/linux_logrotate.html)负责备份和删除旧日志，以及更新日志文件。**
 
 >系统环境：CentOS6.3  
 >对于我来说，仅修改其配置文件，用于屏蔽不需要的日志信息。

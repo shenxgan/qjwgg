@@ -41,4 +41,4 @@
     
     mysql> truncate table test;
 
-什么，还不够，那你可以看看[mysql数据库表的进阶操作](/linux/mysql_advanced_op.html)。
+什么，还不够，那你可以看看[mysql数据库表的进阶操作](http://www.qjwgg.com/linux/mysql_advanced_op.html)。

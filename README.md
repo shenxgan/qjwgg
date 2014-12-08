@@ -12,7 +12,7 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 ##运行
 
-在得到源码后直接运行 qjwgg.py 即可：
+在得到[源码](https://github.com/qjwgg/qjwgg "GitHub 项目主页")后直接运行 qjwgg.py 即可：
 
     ./qjwgg.py 80
 
