@@ -27,17 +27,12 @@ $def with (article)
     </div>
 </div>
 
-<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/jquery-ui.js"></script>
 <script>
 
     $$(document).ready(initPage);
 
     function initPage()
     {
-        $$(document).tooltip({
-            track: true
-        });
         $$("#id_submit").click(checkValueEmpty);
     }
 

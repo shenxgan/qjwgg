@@ -76,6 +76,7 @@ def md2html(md_file):
     input_file = codecs.open(md_file, mode='r', encoding='utf8')
     md = input_file.read()
     html = markdown.markdown(md, extensions=['markdown.extensions.extra'])
+    input_file.close()
 
     return html
 
@@ -120,6 +121,7 @@ def url2article(url):
             web.header("Content-Disposition", "attachment;filename=%s" %(article['name']))
             article['download'] = True
             article['stream'] = fh.read()
+            fh.close()
         else:
             html = md2html(md_path)
             html_info = html.split('<h1>', 1)

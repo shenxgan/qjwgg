@@ -17,6 +17,7 @@
     * [对查找的关键字进行高亮处理][503]
 * [爬虫][600]
     * [小小爬虫][601]
+    * [Python 制作 sitemap][602]
 
 [100]:      http://www.qjwgg.com/webpy/index.html
 [200]:      http://www.qjwgg.com/webpy/webpy_article_structure.html
@@ -37,4 +38,5 @@
 [503]:      http://www.qjwgg.com/webpy/webpy_highlight_str.html
 [600]:      
 [601]:      http://www.qjwgg.com/webpy/webpy_spider.html
+[602]:      http://www.qjwgg.com/webpy/webpy_sitemap.html
 
