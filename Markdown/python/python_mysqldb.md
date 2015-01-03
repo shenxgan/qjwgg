@@ -14,7 +14,7 @@
 
 4. 可能还需要安装：
 
-        # yum install mysql mysql-devel
+        # yum install mysql-devel
         # yum install rpm-build gcc-c++
 
 基本上有以上四步，MySQLdb库就可安装成功了。

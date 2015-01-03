@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://www.qjwgg.com/sitemap.xml
+Sitemap: http://www.qjwgg.com/sitemap.xml

@@ -20,7 +20,7 @@ $def with (article)
                 </span>
             </span><br>
             <input type="hidden" name="url" value="$:article['url']">
-            <input id="id_submit" class="input2" title="点击发送评论" type="submit" value="发送">
+            <input id="id_submit" class="input2" title="点击发送评论" type="button" value="发送">
         </form><br>
         <p>插入图片代码示例：</p>
         <p>![](http://www.qjwgg.com/static/img/qr_test.png)</p>
@@ -29,6 +29,25 @@ $def with (article)
 
 <script>
 
+    document.getElementById("id_submit").onclick = function(){checkValueEmpty()};
+    
+    function checkValueEmpty()
+    {
+        var usrname = document.getElementById("id_usrname").value;
+        var comment = document.getElementById("id_comment").value;
+        if (usrname == "") {
+            alert("昵称不能为空！");
+            document.getElementById("id_usrname").focus();
+            return false;
+        } else if (comment == "") {
+            alert("评论内容不能为空！");
+            document.getElementById("id_comment").focus();
+            return false;
+        } else {
+            document.getElementById("usrform").submit();
+        }
+    }
+/*
     $$(document).ready(initPage);
 
     function initPage()
@@ -49,5 +68,5 @@ $def with (article)
             return false;
         }
     }
-
+*/
 </script>

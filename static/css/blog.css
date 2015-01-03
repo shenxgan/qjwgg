@@ -424,7 +424,7 @@ a:hover { text-decoration:underline;color: red}
 /*****index.html**************/
 
 .home {
-    width:70%;
+    width:80%;
     margin: 0 auto;
 }
 
@@ -450,7 +450,7 @@ a:hover { text-decoration:underline;color: red}
 }
 
 .home-main-right {
-    width:25%;
+    width:28%;
 }
 
 .home-aboutme {

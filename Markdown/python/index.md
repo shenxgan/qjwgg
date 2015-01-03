@@ -1,11 +1,13 @@
 #Python
 
-* [Python删除pyc文件][1]
-* [Python安装MySQLdb库][2]
-* [Python发送邮件][3]
-* [Python中使用logging][4]
-* [使用qrcode库生成二维码][5]
-
+* [通过 ip 和子网掩码计算出子网范围][8]
+* [Python 守护线程示例][7]
+* [Python 获取本机 ip][6]
+* [使用 qrcode 库生成二维码][5]
+* [Python 中使用 logging][4]
+* [Python 发送邮件][3]
+* [Python 安装 MySQLdb 库][2]
+* [Python 删除 pyc 文件][1]
 
 
 [1]:    http://www.qjwgg.com/python/python_del_pyc.html
@@ -13,3 +15,6 @@
 [3]:    http://www.qjwgg.com/python/python_smtp.html
 [4]:    http://www.qjwgg.com/python/python_logging.html
 [5]:    http://www.qjwgg.com/python/python_qrcode.html
+[6]:    http://www.qjwgg.com/python/python_getip.html
+[7]:    http://www.qjwgg.com/python/python_daemon_thread.html
+[8]:    http://www.qjwgg.com/python/python_calculated_subnet_range.html

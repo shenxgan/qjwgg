@@ -95,6 +95,7 @@ def url2article(url):
         usrname = urldata.usrname
         comment = urldata.comment
 
+        if usrname != '' and comment != '':
         usrip = article['usrip']
         usraddr = u'火星'
 
@@ -172,6 +173,7 @@ def findstr(filepath, key):
 def traversal_path(path, key):
     alltext = ''
     for root, dirs, files in os.walk(path):
+        if root.find('.svn') == -1:
         for file in files:
             file = os.path.join(root, file)
             if file != './Markdown/webpy/catalog.md':
