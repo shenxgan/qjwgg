@@ -8,13 +8,25 @@
 <script src="/static/highlight/highlight.pack.js"></script>
 <script >hljs.initHighlightingOnLoad();</script>
 
-<!-- <script>
-    $$(document).ready(initPage);
-
-    function initPage()
+<script>
+    //imgs = document.getElementsByTagName("img");
+    imgs = document.images;
+    //imgs[0].onclick = function(){TINY.box.show({image:imgs[0].src,boxid:'frameless',animate:true,openjs:function(){openJS()}})};
+    for (var i=0; i<imgs.length; i++ )
     {
-        $$(document).tooltip({
-            track: true
-        });
+        _script = "<script>imgs["+i+"].onclick = function(){TINY.box.show({image:imgs["+i+"].src,boxid:'frameless',animate:true,openjs:function(){openJS()}})};<\/script>";
+        document.write(_script);
     }
-</script> -->
+
+    hrefs = document.getElementsByTagName("a");
+    for (var j=0; j<hrefs.length; j++ )
+    {
+        href = hrefs[j].href;
+
+        if (href.search("http://www.qjwgg.com") == -1)
+        {
+            hrefs[j].target = "_blank";
+        }
+    }
+
+</script>

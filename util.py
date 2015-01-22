@@ -100,7 +100,7 @@ def url2article(url):
         usraddr = u'火星'
 
         comment = markdown.markdown(comment, extensions=['markdown.extensions.extra'], safe_mode='escape')  ##将md转化为html
-        sql = "insert into comment values ('%s',NOW(),'%s','%s','%s','%s')" %(url, usrname, usrip, usraddr, comment)
+            sql = "insert into comment values ('%s','%s',NOW(),'%s','%s','%s','%s')" %(0, url, usrname, usrip, usraddr, comment)
         sql = sql.encode('utf-8')
         print sql
         dbhandler.execute(sql)
@@ -111,12 +111,15 @@ def url2article(url):
     name = url.split('/')[2].replace('.html', '')
     md_path = 'Markdown'+url.replace('.html', '.md')
 
+    if url == '/about/':
+        md_path = 'Markdown/about.md'
+
     article['url'] = url  # '/linux/linux_ntp.html'
     article['name'] = name
     article['md_path'] = md_path
 
     if os.path.isfile(md_path) is True:
-        if url.split('.')[1] == 'md':  #下载md文件
+        if url != '/about/' and url.split('.')[1] == 'md':  #下载md文件
             fh = open(md_path)
             web.header("Content-Type","text;charset=utf-8")
             web.header("Content-Disposition", "attachment;filename=%s" %(article['name']))
@@ -134,11 +137,21 @@ def url2article(url):
             article['content'] = content
             article['md_name'] = name+'.md'
 
-            print article['url']
             ## 从数据库读取评论列表
-            sql = "select * from comment where url='%s' order by date" %(article['url'])
+            sql = "select * from comment where url='%s' order by id" %(article['url'])
             comment_list = dbhandler.select(sql)
-            article['comment_list'] = comment_list
+            article['comment_list'] = []
+
+            for comment_info in comment_list:
+                dict = {}
+                dict['id']       = comment_info[0]
+                dict['url']      = comment_info[1]
+                dict['date']     = comment_info[2]
+                dict['usrname']  = comment_info[3]
+                dict['usrip']    = comment_info[4]
+                dict['usraddr']  = comment_info[5]
+                dict['comment']  = comment_info[6]
+                article['comment_list'].append(dict)
     else:
         article['notfound'] = True
         article['title'] = '404 Not Found'

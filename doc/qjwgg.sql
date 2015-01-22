@@ -21,15 +21,15 @@ USE `qjwgg`;
 DROP TABLE IF EXISTS `comment`;
 
 CREATE TABLE `comment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `url` varchar(256) NOT NULL,
   `date` datetime NOT NULL,
   `usrname` varchar(128) DEFAULT NULL,
   `usrip` varchar(64) DEFAULT NULL,
   `usraddr` varchar(256) DEFAULT NULL,
-  `comment` varchar(10240) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-/*Data for the table `comment` */
+  `comment` varchar(10240) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

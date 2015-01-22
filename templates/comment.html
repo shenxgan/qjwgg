@@ -4,14 +4,31 @@ $def with (article)
     <div class="blog-comment">
         <p class="p1">评论列表</p>
         <hr></hr>
-        $for comment_info in article['comment_list']:
+        $for i in range(0, len(article['comment_list'])):
         <div>
-            <p class="p2">$comment_info[2]（来自$comment_info[4]的网友）</p>
-            <p class="p3">$:comment_info[5]</p>
-            <p class="p2">$comment_info[1]</p>
+            <div>
+                <span class="p2">$article['comment_list'][i]['usrname']（来自$article['comment_list'][i]['usraddr']的网友）</span>
+                <span style="float:right;">#$(i+1) 楼</span>
+            </div>
+            <div>
+                <p class="p3">$:article['comment_list'][i]['comment']</p>
+            </div>
+            <div class="p2">
+                <span>$article['comment_list'][i]['date']</span>
+                <span><a class="reply" id="id_reply" href="#id_comment" onclick="reply($(i+1),'$article['comment_list'][i]['usrname']')">回复</a></span>
+            </div>
+
             <hr></hr>
         </div>
     </div>
 </div>
 
 $:render.post_comment(article)
+
+<script>
+
+    function reply(id, name)
+    {
+        document.getElementById("id_comment").value = "回复#"+id+"楼 [ @"+name+" ]：";
+    }
+</script>

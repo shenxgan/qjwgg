@@ -25,6 +25,7 @@ urls = (
     '/?', 'index',
     LINUX_URL + '(.*)', 'linux',
     PYTHON_URL + '(.*)', 'python',
+    '/tools' + '(.*)', 'tools',
     WEBPY_URL + '(.*)', 'webpy',
     '/search' + '(.*)', 'search',
     '/about' + '(.*)', 'about',
@@ -71,6 +72,23 @@ class python:
         else:
             return render.article(article)
 
+
+class tools:
+    def GET(self, url):
+        if url == '' or url == '/':
+            url = '/index.html'
+
+        url = '/tools' + url
+        article = util.url2article(url)
+        
+        if url == '/tools/index.html':
+            return render.tools_index(article)
+        elif article['notfound'] is True:
+            return render.error(article)
+        else:
+            return render.tools(article)
+
+            
 class webpy:
     def GET(self, url):
 
@@ -106,15 +124,10 @@ class search:
 class about:
     def GET(self, url):
         article = {}
-        article['url'] = '/about/'
-        article['title'] = 'about'
-
-        sql = "select * from comment where url='%s' order by date" %(article['url'])
-        comment_list = dbhandler.select(sql)
-        article['comment_list'] = comment_list
-        article['md_name'] = './Markdown/about.md'
-        html = util.md2html(article['md_name'])
-        article['content'] = html
+        if url == '':
+            url = '/'
+        url = '/about' + url
+        article = util.url2article(url)
         return render.about(article)
 
 class publish:

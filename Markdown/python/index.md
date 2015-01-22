@@ -1,5 +1,9 @@
 #Python
 
+* [Python 使用 paramiko 模块进行远程调用][12]
+* [Queue 模块][11]
+* [json 模块常用函数整理][10]
+* [time 模块常用函数整理][9]
 * [通过 ip 和子网掩码计算出子网范围][8]
 * [Python 守护线程示例][7]
 * [Python 获取本机 ip][6]
@@ -18,3 +22,7 @@
 [6]:    http://www.qjwgg.com/python/python_getip.html
 [7]:    http://www.qjwgg.com/python/python_daemon_thread.html
 [8]:    http://www.qjwgg.com/python/python_calculated_subnet_range.html
+[9]:    http://www.qjwgg.com/python/python_time.html
+[10]:   http://www.qjwgg.com/python/python_json.html
+[11]:   http://www.qjwgg.com/python/python_queue.html
+[12]:   http://www.qjwgg.com/python/python_paramiko.html

@@ -9,6 +9,29 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 1. 在线生成二维码 [**demo**](http://www.qjwgg.com/qrcode)
 2. Markdown 在线解析 [**demo**](http://www.qjwgg.com/publish)
 
+##安装必要环境
+
+下述安装步骤是在 CentOS6.3 Python2.6.6 中进行的，供参考
+
+    wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
+    python get-pip.py
+
+    pip install web.py
+    pip install Markdown==2.4  # 注意版本
+    pip install qrcode
+
+    yum install gcc gcc-c++
+    yum install python-devel
+    yum install libjpeg libjpeg-devel  # 使得 PIL 支持 jpeg 格式
+    pip install PIL --allow-external PIL --allow-unverified PIL
+
+    yum install mysql mysql-server
+    yum install mysql-devel
+    pip install MySQL-python
+
+    service mysqld start
+    mysqladmin -uroot password "password"  # 设置 mysql 密码
+    mysql -uroot -ppassword < doc/qjwgg.sql  # 导入 sql 文件，创建数据库和相关表格
 
 ##运行
 

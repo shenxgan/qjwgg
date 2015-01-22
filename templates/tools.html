@@ -1,0 +1,28 @@
+$def with (article)
+<!DOCTYPE html>
+<html lang='zh' style="background-color:white;">
+    $:render.layout.header(article['title'])
+<body>
+    <div style="width:80%;height:60%;background-color:white;margin:0px auto;">
+        $:article['content']
+    </div>
+    $#$:render.layout.footer()
+</body>
+</html>
+<script>
+    //imgs = document.getElementsByTagName("img");
+    imgs = document.images;
+    //imgs[0].onclick = function(){TINY.box.show({image:imgs[0].src,boxid:'frameless',animate:true,openjs:function(){openJS()}})};
+    for (var i=0; i<imgs.length; i++ )
+    {
+        _script = "<script>imgs["+i+"].onclick = function(){TINY.box.show({image:imgs["+i+"].src,boxid:'frameless',animate:true,openjs:function(){openJS()}})};<\/script>";
+        document.write(_script);
+    }
+
+    hrefs = document.getElementsByTagName("a");
+    for (var j=0; j<hrefs.length; j++ )
+    {
+        hrefs[j].target = "_blank";
+    }
+
+</script>
