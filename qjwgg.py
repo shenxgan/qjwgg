@@ -72,7 +72,6 @@ class python:
         else:
             return render.article(article)
 
-
 class tools:
     def GET(self, url):
         if url == '' or url == '/':
@@ -80,7 +79,7 @@ class tools:
 
         url = '/tools' + url
         article = util.url2article(url)
-        
+
         if url == '/tools/index.html':
             return render.tools_index(article)
         elif article['notfound'] is True:
@@ -88,7 +87,6 @@ class tools:
         else:
             return render.tools(article)
 
-            
 class webpy:
     def GET(self, url):
 
@@ -190,9 +188,9 @@ class other:
             fh.close()
             return robots
         else:
-        article = {}
-        article['title'] = '404 Not Found'
-        return render.error(article)
+            article = {}
+            article['title'] = '404 Not Found'
+            return render.error(article)
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

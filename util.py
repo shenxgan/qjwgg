@@ -96,15 +96,15 @@ def url2article(url):
         comment = urldata.comment
 
         if usrname != '' and comment != '':
-        usrip = article['usrip']
-        usraddr = u'火星'
+            usrip = article['usrip']
+            usraddr = u'火星'
 
-        comment = markdown.markdown(comment, extensions=['markdown.extensions.extra'], safe_mode='escape')  ##将md转化为html
+            comment = markdown.markdown(comment, extensions=['markdown.extensions.extra'], safe_mode='escape')  ##将md转化为html
             sql = "insert into comment values ('%s','%s',NOW(),'%s','%s','%s','%s')" %(0, url, usrname, usrip, usraddr, comment)
-        sql = sql.encode('utf-8')
-        print sql
-        dbhandler.execute(sql)
-        upaddr = ip2address(usrip)
+            sql = sql.encode('utf-8')
+            print sql
+            dbhandler.execute(sql)
+            upaddr = ip2address(usrip)
 
         raise web.seeother(url)
 
@@ -187,12 +187,12 @@ def traversal_path(path, key):
     alltext = ''
     for root, dirs, files in os.walk(path):
         if root.find('.svn') == -1:
-        for file in files:
-            file = os.path.join(root, file)
-            if file != './Markdown/webpy/catalog.md':
-                text = findstr(file, key)
-                if text != '':
-                    alltext += text
+            for file in files:
+                file = os.path.join(root, file)
+                if file != './Markdown/webpy/catalog.md':
+                    text = findstr(file, key)
+                    if text != '':
+                        alltext += text
 
     alltext = alltext.decode('utf-8')
     html = markdown.markdown(alltext, extensions=['markdown.extensions.extra'])

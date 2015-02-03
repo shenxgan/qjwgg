@@ -2,7 +2,7 @@
 
 表单提交主要是运用在评论提交的时候。
 
-使用了 html 中 [<form\> 标签的 action 属性](http://www.w3school.com.cn/tags/att_form_action.asp)
+使用了 html 中 [&lt;form&gt; 标签的 action 属性](http://www.w3school.com.cn/tags/att_form_action.asp)
 
     <form action="comment.html">
         ...

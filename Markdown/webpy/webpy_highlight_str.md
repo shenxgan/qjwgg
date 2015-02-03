@@ -6,7 +6,7 @@
 
 想到 MD 语法中支持书写 HTML 语法，并且最终在网页上呈现时都是要转换为 HTML 的，所以方法有了：
 
-将查找到的字段放到一个[ <strong\> 标签](http://www.w3school.com.cn/tags/tag_strong.asp)中，并设置其颜色为红色 `style="color: red"`
+将查找到的字段放到一个[ &lt;strong&gt; 标签](http://www.w3school.com.cn/tags/tag_strong.asp)中，并设置其颜色为红色 `style="color: red"`
 
     match = match.replace(key,'<strong style="color: red">%s</strong>' %(key))
     
@@ -14,6 +14,6 @@
 
 **不足：**
 
-感觉最大的不足就是当[ <code\> 标签](http://www.w3school.com.cn/tags/tag_code.asp)中存在搜索的字段时，高亮效果就会失效，并且 <strong\> 标签也会被显现出来。
+感觉最大的不足就是当[ &lt;code&gt; 标签](http://www.w3school.com.cn/tags/tag_code.asp)中存在搜索的字段时，高亮效果就会失效，并且 &lt;strong&gt; 标签也会被显现出来。
 
 还未找到好的方法去解决这个问题。

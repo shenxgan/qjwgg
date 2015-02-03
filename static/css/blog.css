@@ -565,7 +565,6 @@ a:hover { text-decoration:underline;color: red}
 #frameless .tclose {left:6px}
 
 
-
 /***** tools **************/
 #testdiv {width:80%; margin:0px auto;}
 /*
@@ -578,5 +577,5 @@ li:hover {border:1px solid #bbb; background:#e3e3e3}
 #testdiv ul li{float:left;width:30%;height:160px;text-align:center;}
 #testdiv ul li img{width:70%;}
 
-
-
+.tool-article{width:80%;height:60%;background-color:white;margin:0px auto;}
+.tool-article img{max-width:706px}

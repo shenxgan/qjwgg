@@ -8,6 +8,6 @@
 ##代码管理
 
 现阶段使用的 svn，在此服务器上自己手动搭建的一个 svn。  
-至于如何搭建 svn，请参考我的另一篇文章：[linux配置svn](http://www.qjwgg.com/linux/linux_svn.html)
+至于如何搭建 svn，请参考我的另一篇文章：[《linux配置svn》](http://www.qjwgg.com/linux/linux_svn.html)
 
-后期打算将整个代码托管到 github 中，使用 git 管理。
+现已经将整个代码托管到 github 中，使用 git 管理。地址为 [https://github.com/qjwgg/qjwgg](https://github.com/qjwgg/qjwgg)

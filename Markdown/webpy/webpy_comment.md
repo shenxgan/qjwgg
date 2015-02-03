@@ -18,11 +18,11 @@
 
 ##2. 界面上的评论框
 
-刚开始确实不知道评论框是用的什么标签，然后就随便去了一个有评论的网站，看了看页面源代码，原来是需要一个[HTML <textarea\> 标签](http://www.w3school.com.cn/tags/tag_textarea.asp)。后在我的代码中新建了一个评论模板，将<textarea\>标签加进去了。
+刚开始确实不知道评论框是用的什么标签，然后就随便去了一个有评论的网站，看了看页面源代码，原来是需要一个[HTML &lt;textarea&gt; 标签](http://www.w3school.com.cn/tags/tag_textarea.asp)。后在我的代码中新建了一个评论模板，将&lt;textarea&gt;标签加进去了。
 
 ##3. 表单的提交
 
-在评论模板中可添加[HTML <form\> 标签](http://www.w3school.com.cn/tags/tag_form.asp)，后在python代码中可使用webpy的[web.input](http://webpy.org/cookbook/input.zh-cn)来接收用户数据。
+在评论模板中可添加[HTML &lt;form&gt; 标签](http://www.w3school.com.cn/tags/tag_form.asp)，后在python代码中可使用webpy的[web.input](http://webpy.org/cookbook/input.zh-cn)来接收用户数据。
 
 ##4. 支持 Markdown 语法
 

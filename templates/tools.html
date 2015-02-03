@@ -3,7 +3,7 @@ $def with (article)
 <html lang='zh' style="background-color:white;">
     $:render.layout.header(article['title'])
 <body>
-    <div style="width:80%;height:60%;background-color:white;margin:0px auto;">
+    <div class="tool-article">
         $:article['content']
     </div>
     $#$:render.layout.footer()
