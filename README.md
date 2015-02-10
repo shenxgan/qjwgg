@@ -58,9 +58,12 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
     │   ├── linux                   #Linux 类文章
     │   ├── markdown_online.md      #Markdown 在线解析中的语法介绍
     │   ├── python                  #Python 类文章
+    │   ├── tools                   #Tools 类文章
     │   └── webpy                   #web.py + Markdown 教程
     ├── qjwgg.py                    #程序入口，进行 URL 分发并启动博客系统
     ├── README.md                   #Home 页面
+    ├── robots.txt                  #robots.txt 文件
+    ├── sitemap.xml                 #站点地图
     ├── static                      #存放静态文件目录，web.py 框架的要求
     │   ├── css
     │   ├── fonts
@@ -78,8 +81,12 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
     │   ├── post_comment.html       #评论框模板
     │   ├── publish.html            #在线 Markdown 解析模板
     │   ├── qrcode.html             #在线生成二维码模板
-    │   └── search.html             #搜索模板
+    │   ├── search.html             #搜索模板
+    │   ├── tools.html              #Tools 页面模板
+    │   └── tools_index.html        #Tools 首页模板
     └── util.py                     #用于博客后台逻辑实现
+
+    14 directories, 22 files
 
 截图如下：
 
