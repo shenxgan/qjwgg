@@ -7,6 +7,7 @@
 
 使用的关键技术就是`urllib2`这个库，其中核心的函数`ip2addr`，源码如下：
 
+    :::python
     def ip2addr(ip):
         addr = {}
         addr['country'] =  ''
@@ -46,6 +47,7 @@
 **最终使用的方法：**使用线程来执行ip2addr  
 这是我在我的评论中使用的方法，即有人发表了一条评论时，开启线程去执行`ip2addr`，当执行完后对数据库进行更新即可。更新时根据ip地址对应唯一物理地址的原则进行更新（webpy获取客户端ip地址：[web.ctx.ip](http://webpy.org/cookbook/ctx.zh-cn)）。
 
+    :::python
     class ip2address(threading.Thread):
         def __init__(self, ip):
             threading.Thread.__init__(self)

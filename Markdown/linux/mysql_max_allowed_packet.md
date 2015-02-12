@@ -6,6 +6,7 @@
 
 ####查看其大小：
 
+    :::mysql
     mysql> show VARIABLES like '%max_allowed_packet%';
     +--------------------------+------------+
     | Variable_name            | Value      |
@@ -23,7 +24,8 @@
 
 可通过修改 /etc/my.cnf 文件来设置 max_allowed_packet 大小，重启 mysql 服务后生效：
 
-    # vim /etc/my.cnf
+    :::bash
+    vim /etc/my.cnf
         [mysqld]
         datadir=/var/lib/mysql
         socket=/var/lib/mysql/mysql.sock

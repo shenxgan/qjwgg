@@ -6,6 +6,7 @@
 
 ###1. 源码示例：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 
@@ -37,6 +38,7 @@
 
 ###2. 终端/文件输出如下：
 
+    :::bash
     2014-10-28 11:43:23,986 py_log.py[line:21][func:log_test] [WARNING] python logging.
     2014-10-28 11:43:23,987 py_log.py[line:22][func:log_test] [ERROR] hello, logging.
     

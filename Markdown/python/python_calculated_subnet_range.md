@@ -1,5 +1,6 @@
 #通过 ip 和子网掩码计算出子网范围
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 

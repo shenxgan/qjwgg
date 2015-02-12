@@ -2,6 +2,7 @@
 
 先贴代码：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 
@@ -56,6 +57,7 @@
 
 其中一次（2014/12/02）的运行结果如下：
 
+    :::bash
     http://www.qjwgg.com/search ---
     http://www.qjwgg.com/qrcode ---
     http://www.qjwgg.com/publish ---
@@ -134,7 +136,3 @@
     http://www.qjwgg.com/webpy/webpy_python_search_string.html
     http://www.qjwgg.com/webpy/webpy_python_traverse_dir.html
     http://www.qjwgg.com/webpy/webpy_search.html
-
-
-
-

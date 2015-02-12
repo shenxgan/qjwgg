@@ -19,6 +19,7 @@
 * 下载安装 npm, 下载地址：[http://nodejs.org/download/](http://nodejs.org/download/)
 * 安装 gitbook
 
+        :::bash
         npm install gitbook -g
 
 ###使用
@@ -28,6 +29,7 @@ gitbook 需要两个基本文件：README.md 和 SUMMARY.md
 * `README.md` 为书的介绍
 * `SUMMARY.md` 为书的目录，示例如下（注意格式）
 
+        :::markdown
         * [教程简介](webpy/index.md)
         * [文章结构](webpy/webpy_article_structure.md)
             * [获取标题](webpy/webpy_get_title.md)

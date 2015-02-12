@@ -4,6 +4,7 @@ Markdown下载地址：[https://pypi.python.org/pypi/Markdown](https://pypi.pyth
 
 下述是**MD文件**转化为html的源码示例：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 
@@ -26,4 +27,5 @@ Markdown下载地址：[https://pypi.python.org/pypi/Markdown](https://pypi.pyth
 
 若是Markdown格式的字符串/文件流转化为html字符串的话，仅使用这一句即可：
 
+    :::python
     html = markdown.markdown(md, extensions=['markdown.extensions.extra'])

@@ -12,6 +12,7 @@
 
 >源码：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
     
@@ -49,6 +50,7 @@
 
 直接在Python程序的主进程中包含**RemovePycfile()**函数即可，如下方法进行包含
 
+    :::python
     from rm_pycfile import RemovePycfile()
 
 然后可直接在“主函数”中使用RemovePycfile()来进行删除所有的pyc文件了。

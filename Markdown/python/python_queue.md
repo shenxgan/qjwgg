@@ -1,5 +1,6 @@
 #Queue 模块
 
+    :::python
     >>> import Queue
 
 > Queue 模块一般用于多线程环境，多用于线程之间的通信
@@ -32,6 +33,7 @@
 
 ###此包中的常用方法(q = Queue.Queue()):
 
+    :::python
     q.qsize()           # 返回队列的大小
     q.empty()           # 如果队列为空，返回 True, 反之 False
     q.full()            # 如果队列满了，返回 True, 反之 False
@@ -44,6 +46,7 @@
 
 ###代码示例
 
+    :::python
     >>> import Queue
     >>> q = Queue.Queue()
     >>> q.qsize()

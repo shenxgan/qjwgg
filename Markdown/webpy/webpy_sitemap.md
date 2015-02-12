@@ -10,6 +10,7 @@
 
 用法还是很简单的，代码示例如下：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 

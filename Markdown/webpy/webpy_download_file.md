@@ -7,6 +7,7 @@
 
 网上搜索了一下，查到一种方法：
 
+    :::python
     web.header("Content-Type","text;charset=utf-8")
     web.header("Content-Disposition", "attachment;filename=%s" %(filename))
 

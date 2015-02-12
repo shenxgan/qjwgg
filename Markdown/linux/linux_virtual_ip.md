@@ -1,5 +1,6 @@
 #linux 虚拟 ip
 
+    :::bash
     #!/bin/bash
 
     # 版本： v0.2
@@ -130,5 +131,4 @@
             exit -1
             ;;
     esac
-
 

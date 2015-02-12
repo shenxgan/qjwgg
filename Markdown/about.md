@@ -17,4 +17,4 @@
 
 ##此blog搭建教程
 
-请参考[webpy+Markdown教程](/webpy)
+请参考[webpy+Markdown教程](http://www.qjwgg.com/webpy)

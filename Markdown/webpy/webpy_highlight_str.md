@@ -8,6 +8,7 @@
 
 将查找到的字段放到一个[ &lt;strong&gt; 标签](http://www.w3school.com.cn/tags/tag_strong.asp)中，并设置其颜色为红色 `style="color: red"`
 
+    :::python
     match = match.replace(key,'<strong style="color: red">%s</strong>' %(key))
     
 很简单的操作，可点击右上角的搜索图标进行搜索查看效果。
@@ -17,3 +18,10 @@
 感觉最大的不足就是当[ &lt;code&gt; 标签](http://www.w3school.com.cn/tags/tag_code.asp)中存在搜索的字段时，高亮效果就会失效，并且 &lt;strong&gt; 标签也会被显现出来。
 
 还未找到好的方法去解决这个问题。
+
+***
+
+###补充：
+【初步解决上述的不足】
+
+后续修改时，去掉了 &lt;code&gt; 标签，并同时去掉了简要里面的超链接，仅显示出超链接地址。

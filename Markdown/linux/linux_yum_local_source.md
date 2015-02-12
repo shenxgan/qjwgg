@@ -1,5 +1,6 @@
 #linux 配置本地 yum 源
 
+    :::bash
     # 前提：需要连接上 ISO 文件
     # 在 CentOS6.3 上测试成功
 

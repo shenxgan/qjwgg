@@ -10,12 +10,14 @@
 
 3. 若缺少Python.h文件，下载安装python-devel
     
-        # yum install python-devel
+        :::bash
+        yum install python-devel
 
 4. 可能还需要安装：
 
-        # yum install mysql-devel
-        # yum install rpm-build gcc-c++
+        :::bash
+        yum install mysql-devel
+        yum install rpm-build gcc-c++
 
 基本上有以上四步，MySQLdb库就可安装成功了。
 

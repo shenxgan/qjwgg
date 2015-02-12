@@ -4,19 +4,21 @@ logrotate是一个日志管理程序，用来把旧的日志文件删除（备�
 
 >系统环境：CentOS6.3
 
-##1. logrotate启动方式
+###1. logrotate启动方式
 
 logrotate 的执行由**crond服务**实现。在/etc/cron.daily目录中，有个文件logrotate，它实际上是个shell script，用来启动logrotate。logrotate程序每天由cron在指定的时间（/etc/crontab）启动。
 
 手动强制执行：
 
+    :::bash
     logrotate -f /etc/logrotate.conf
 
 可用来检测，配置是否生效。
 
 
-##2. 配置文件/etc/logrotate.conf
+###2. 配置文件/etc/logrotate.conf
 
+    :::bash
     # see "man logrotate" for details
     # rotate log files weekly
     weekly      # 每周轮转一次
@@ -40,7 +42,7 @@ logrotate 的执行由**crond服务**实现。在/etc/cron.daily目录中，有�
     /var/log/wtmp {             # 定义/var/log/wtmp这个日志文件
         monthly                 # 每月轮转一次，取代了上面的全局设定的每周轮转一次
         create 0664 root utmp   # 新的日志文件的权限，属主，属主
-    	minsize 1M              # 定义日志必须要大于1M大小才会去轮转
+        minsize 1M              # 定义日志必须要大于1M大小才会去轮转
         rotate 1                # 保留1个，取代了上面的全局设定的保留4个
     }
     
@@ -54,8 +56,9 @@ logrotate 的执行由**crond服务**实现。在/etc/cron.daily目录中，有�
     # system-specific logs may be also be configured here.
 
 
-##3. 配置语法
+###3. 配置语法
 
+    :::text
     选项                    用途
     nocompress,compress     不压缩,压缩
     delaycompress           不压缩前一个截断的文件（需要与compress一起用）
@@ -79,6 +82,6 @@ logrotate 的执行由**crond服务**实现。在/etc/cron.daily目录中，有�
     dateext                 增加日期作为后缀，不然会是一串无意义的数字
     dateformat .%s          切换后文件名，必须配合dateext使用
 
-##4. 参考
+###4. 参考
 [rsyslog和logrotate服务](http://w.gdu.me/wiki/Linux/rsyslog_logrotate.html)  
 [第十九章、認識與分析登錄檔](http://linux.vbird.org/linux_basic/0570syslog.php)

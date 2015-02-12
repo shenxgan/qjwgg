@@ -2,6 +2,7 @@
 
 需求：使用 Python 从文件中查找指定的字符串
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 

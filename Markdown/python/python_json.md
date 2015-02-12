@@ -1,5 +1,6 @@
 #json 模块常用函数整理
 
+    :::python
     >>> import json
 
 ###json.dumps()
@@ -14,7 +15,7 @@ json.dumps() 常用可选参数介绍：
 * `encoding` 字符串编码，默认为 UTF-8
 * `sort_keys` 默认为 False，当设置为 True 时，那么字典将以其 key 值进行排序后输出。
 
-```
+```python
 >>> dict_data = {'Plant':[{'species':'tree','age':100},{'species':'grass','age':0.5}], 'Animal':[{'species':'cat','age':1},{'species':'dog','age':2}]}
 >>> print json.dumps(dict_data)
 {"Plant": [{"age": 100, "species": "tree"}, {"age": 0.5, "species": "grass"}], "Animal": [{"age": 1, "species": "cat"}, {"age": 2, "species": "dog"}]}
@@ -55,6 +56,7 @@ Json 转换为 Python
 
 ![](/static/img/json_loads.png)
 
+    :::python
     >>> json_data = json.dumps(dict_data)
     >>> dict_data = json.loads(json_data)
     >>> print dict_data

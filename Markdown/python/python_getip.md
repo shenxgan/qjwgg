@@ -1,5 +1,6 @@
 #Python 获取本机 ip
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 
@@ -19,5 +20,3 @@
 
     if __name__ == '__main__':
         print get_ip()
-
-

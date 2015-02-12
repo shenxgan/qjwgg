@@ -12,6 +12,7 @@
 
 下载安装完成后，可在 linux 中敲下如下命令：
 
+    :::bash
     qr "Some text" > test.png
 
 若在当前目录生成了 test.png 的二维码图片，即表示成功。
@@ -21,6 +22,7 @@
 
 ###简单用法：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 
@@ -31,6 +33,7 @@
 
 ###高级用法：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 

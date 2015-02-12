@@ -21,6 +21,7 @@
 
 * Linux 上就需要使用一些命令（仅列出简单且常用的命令）了：
 
+        :::bash
         svn co svn://192.168.0.100/qjwgg    # co=checkout 检出代码
         svn update                          # 更新代码
         svn add file                        # 添加新文件

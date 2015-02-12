@@ -6,20 +6,21 @@
 
 ###1. 搭建步骤：
 
-    # yum -y install mysql mysql-server
-    # yum -y install httpd
-    # yum -y install sendmail
-    # yum -y install ReviewBoard
+    :::bash
+    yum -y install mysql mysql-server
+    yum -y install httpd
+    yum -y install sendmail
+    yum -y install ReviewBoard
 
-    # service mysqld start
-    # service httpd start
-    # service sendmail start
+    service mysqld start
+    service httpd start
+    service sendmail start
 
-    # mysqladmin -u root password "password"
-    # mysql -u root -p
+    mysqladmin -u root password "password"
+    mysql -u root -p
         > create database reviewboard default charset utf8 collate utf8_general_ci;
 
-    # rb-site install /var/www/reviews.example.com
+    rb-site install /var/www/reviews.example.com
         Domain Name: 172.10.3.25
         Root Path [/]: （回车）
         Shipped Media URL [static/]: （回车）
@@ -40,12 +41,12 @@
         E-Mail Address: ***@***.com
 
     # 更改文件拥有者为apache（web 服务器）（在 site 创建完成时，会提示做如下更改）
-    # chown -R apache /var/www/reviews.example.com/htdocs/media/uploaded
-    # chown -R apache /var/www/reviews.example.com/htdocs/media/ext/
-    # chown -R apache /var/www/reviews.example.com/data/
-    # cp /var/www/reviews.example.com/conf/apache-wsgi.conf /etc/httpd/conf.d
+    chown -R apache /var/www/reviews.example.com/htdocs/media/uploaded
+    chown -R apache /var/www/reviews.example.com/htdocs/media/ext/
+    chown -R apache /var/www/reviews.example.com/data/
+    cp /var/www/reviews.example.com/conf/apache-wsgi.conf /etc/httpd/conf.d
 
-    # vim /etc/httpd/conf/httpd.conf
+    vim /etc/httpd/conf/httpd.conf
         ...
         <Directory />
             Options FollowSymLinks
@@ -53,18 +54,19 @@
             Allow from all（添加部分）
         </Directory>
         ...
-    # setenforce 0
+    setenforce 0
     # 开启80端口，以便其他主机能够访问reviewboard
-    # /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
-    # service httpd restart
+    /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+    service httpd restart
 
 
 ###2. 设置开机自启动
 
-    # chkconfig httpd on
-    # chkconfig mysqld on
-    # chkconfig sendmail on
-    # vim /etc/rc.d/rc.local（加入以下部分）
+    :::bash
+    chkconfig httpd on
+    chkconfig mysqld on
+    chkconfig sendmail on
+    vim /etc/rc.d/rc.local（加入以下部分）
         ...
         setenforce 0
         /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT

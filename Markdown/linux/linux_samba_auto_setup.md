@@ -1,5 +1,6 @@
 #linux 一键配置安装 samba 脚本
 
+    :::bash
     # 需要先可使用 yum 进行软件的安装
     # 在 CentOS6.3 上测试成功
 

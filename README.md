@@ -13,12 +13,14 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 下述安装步骤是在 CentOS6.3 Python2.6.6 中进行的，供参考
 
+    :::bash
     wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
     python get-pip.py
 
     pip install web.py
     pip install Markdown==2.4  # 注意版本
     pip install qrcode
+    pip install Pygments  # 使用 Pygments 进行代码高亮
 
     yum install gcc gcc-c++
     yum install python-devel
@@ -37,17 +39,20 @@ web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写�
 
 在得到[源码](https://github.com/qjwgg/qjwgg "GitHub 项目主页")后直接运行 qjwgg.py 即可：
 
+    :::bash
     ./qjwgg.py 80
 
 后台运行可使用
 
+    :::bash
     nohup ./qjwgg.py 80 &
 
 ##代码结构
 
 以下仅仅列出了代码的两级结构，相信已足够说明此博客的结构了。
 
-    # tree -L 2 -C
+    :::bash
+    tree -L 2 -C
     .
     ├── database.py                 #数据库操作接口，若使用 web.py 自带的数据库操作则可不用这个
     ├── doc                         #数据库创建的 sql 语句

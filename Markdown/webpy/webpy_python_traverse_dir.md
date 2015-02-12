@@ -4,6 +4,7 @@
 
 先来看看代码示例：
 
+    :::python
     #!/usr/bin/python
     # -*- coding: utf-8 -*-
 

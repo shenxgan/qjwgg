@@ -15,6 +15,7 @@
 
 在Python中进行解析Markdown扩展语法，需要进行指定。
 
+    :::python
     markdown.markdown(md, extensions=['markdown.extensions.extra'])
 
 详细可参考我的另一篇文章：[《Markdown转换为html》](http://www.qjwgg.com/webpy/webpy_md2html.html)
@@ -29,5 +30,4 @@
 
 Python Markdown 提供的扩展：  
 [https://pythonhosted.org/Markdown/extensions/index.html](https://pythonhosted.org/Markdown/extensions/index.html)
-
 

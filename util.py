@@ -75,7 +75,7 @@ def md2html(md_file):
 
     input_file = codecs.open(md_file, mode='r', encoding='utf8')
     md = input_file.read()
-    html = markdown.markdown(md, extensions=['markdown.extensions.extra'])
+    html = markdown.markdown(md, extensions=['markdown.extensions.extra', 'markdown.extensions.codehilite'])
     input_file.close()
 
     return html
@@ -99,7 +99,7 @@ def url2article(url):
             usrip = article['usrip']
             usraddr = u'火星'
 
-            comment = markdown.markdown(comment, extensions=['markdown.extensions.extra'], safe_mode='escape')  ##将md转化为html
+            comment = markdown.markdown(comment, extensions=['markdown.extensions.extra', 'markdown.extensions.codehilite'], safe_mode='escape')  ##将md转化为html
             sql = "insert into comment values ('%s','%s',NOW(),'%s','%s','%s','%s')" %(0, url, usrname, usrip, usraddr, comment)
             sql = sql.encode('utf-8')
             print sql
@@ -173,11 +173,15 @@ def findstr(filepath, key):
 
     for match in re.findall('\n.*'+key+'.*\n',buffer):
         html = filepath.split('/',2)[2].replace('md','html')
+        if html == 'about.html':
+            html = 'about/'
         if html.find('index.html') == -1:
             match = match.replace(key,'<strong style="color: red">%s</strong>' %(key))
             text += match
+            text = text.replace('[','')
+            text = text.replace(']','')
     if text != '':
-        text = '#[%s](%s)\n%s' %(title, html, text)
+        text = '#[%s](%s)\n%s\n<br>\n' %(title, html, text)
         #text += '\n<br><br>\n***\n'
     file.close()
     return text
@@ -196,6 +200,10 @@ def traversal_path(path, key):
 
     alltext = alltext.decode('utf-8')
     html = markdown.markdown(alltext, extensions=['markdown.extensions.extra'])
+    html = html.replace('<code>','')
+    html = html.replace('</code>','')
+    html = html.replace('&lt;','<')
+    html = html.replace('&gt;','>')
     return html
 
 

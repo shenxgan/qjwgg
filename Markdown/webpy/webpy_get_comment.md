@@ -1,20 +1,21 @@
 #webpy获取评论内容
 
-##1. 原理
+###1. 原理
 
-因为webpy在实现留言板的时候呢，是将用户的评论内容存入了数据库中，所以当需要呈现用户评论的时候就需要从数据库进行读取了。
+因为 webpy 在实现留言板的时候呢，是将用户的评论内容存入了数据库中，所以当需要呈现用户评论的时候就需要从数据库进行读取了。
 
-在存入数据库的时候是使用文章的url作为表关键字的，所以从MD文件加载文章完成后（解析MD文件），紧接着就应该去加载用户评论了（读取数据库）。
+在存入数据库的时候是使用文章的 url 作为表关键字的，所以从 MD 文件加载文章完成后（解析 MD 文件），紧接着就应该去加载用户评论了（读取数据库）。
 
 
-##2. 实现方法
+###2. 实现方法
 
 1. 读取数据库，获取评论内容
-2. 创建了一个coment.html的模板（模板源码见下），用于呈现评论内容
-3. 在article.html模板（普通文章的模板）中调用coment.html模板
+2. 创建了一个 coment.html 的模板（模板源码见下），用于呈现评论内容
+3. 在 article.html 模板（普通文章的模板）中调用 coment.html 模板
 
-comment.html模板的源码如下：
+comment.html 模板的源码如下：
 
+    :::html
     $def with (article)
 
     <div class="blog-post">
@@ -31,8 +32,8 @@ comment.html模板的源码如下：
         </div>
     </div>
 
-其中，article['comment_list']是从数据库中获取的此篇文章的所有的评论内容，在此模板中使用for循环来进行呈现。
+其中，article['comment_list'] 是从数据库中获取的此篇文章的所有的评论内容，在此模板中使用 for 循环来进行呈现。
     
     
-##相关文章：
-* [webpy实现留言板功能](http://www.qjwgg.com/webpy/webpy_comment.html)
+###相关文章：
+* [webpy 实现留言板功能](http://www.qjwgg.com/webpy/webpy_comment.html)
