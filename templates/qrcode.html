@@ -11,7 +11,7 @@ $def with (article)
         <div class="qrcode-down">
             <div class="left qrcode-down-left">
                 <form method="POST" action="/qrcode/$article['img_name']" enctype="multipart/form-data">
-                    <textarea id="left" name="text" oniput="TextUtil.NotMax(this)" maxlength="100">$article['text']</textarea>
+                    <textarea id="left" name="text" maxlength="100">$article['text']</textarea>
                     <br>
                     <div class="qrcode-upload-file">
                         <input type="file" name="myfile"/>
@@ -28,12 +28,3 @@ $def with (article)
     </div>
 </body>
 </html>
-<script language="JavaScript" type="text/javascript">
-    var TextUtil = new Object();
-    TextUtil.NotMax = function(oTextArea){
-        var maxText = oTextArea.getAttribute("maxlength");
-        if(oTextArea.value.length > maxText){
-            oTextArea.value = oTextArea.value.substring(0,maxText);
-        }
-    }
-</script>

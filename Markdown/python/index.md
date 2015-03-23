@@ -1,5 +1,6 @@
 #Python
 
+* [Python with 简述][13]
 * [Python 使用 paramiko 模块进行远程调用][12]
 * [Queue 模块][11]
 * [json 模块常用函数整理][10]
@@ -26,3 +27,4 @@
 [10]:   http://www.qjwgg.com/python/python_json.html
 [11]:   http://www.qjwgg.com/python/python_queue.html
 [12]:   http://www.qjwgg.com/python/python_paramiko.html
+[13]:   http://www.qjwgg.com/python/python_with.html
