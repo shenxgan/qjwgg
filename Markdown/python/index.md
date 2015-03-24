@@ -1,5 +1,7 @@
 #Python
 
+* [Python yield 简述][15]
+* [Python lambda 表达式简述][14]
 * [Python with 简述][13]
 * [Python 使用 paramiko 模块进行远程调用][12]
 * [Queue 模块][11]
@@ -28,3 +30,5 @@
 [11]:   http://www.qjwgg.com/python/python_queue.html
 [12]:   http://www.qjwgg.com/python/python_paramiko.html
 [13]:   http://www.qjwgg.com/python/python_with.html
+[14]:   http://www.qjwgg.com/python/python_lambda.html
+[15]:   http://www.qjwgg.com/python/python_yield.html
