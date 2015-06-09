@@ -1,8 +1,8 @@
 #[qjwgg](http://www.qjwgg.com/ "请叫我古怪") -- web.py 搭建的轻量级博客
 
-*注意：*
+**注意：**
 
-> *http://www.qjwgg.com*域名已经不再使用了。
+> **www.qjwgg.com**域名已经不再使用了。
 
 ##简要介绍
 
