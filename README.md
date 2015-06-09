@@ -1,5 +1,9 @@
 #[qjwgg](http://www.qjwgg.com/ "请叫我古怪") -- web.py 搭建的轻量级博客
 
+*注意：*
+
+> *http://www.qjwgg.com*域名已经不再使用了。
+
 ##简要介绍
 
 web.py 实现的简易 blog，webpy 用来搭建框架，Markdown 用来书写内容。
